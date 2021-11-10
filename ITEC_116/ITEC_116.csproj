@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{948F3DC6-1EB1-495B-8A59-28126F503632}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ITEC_116</RootNamespace>
+    <AssemblyName>ITEC_116</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AF_DatabaseDataExpenses.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AF_DatabaseDataExpenses.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AF_DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AF_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AF_DatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AF_DatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AF_DatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AF_DatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AF_DatabaseExpenses.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AF_DatabaseExpenses.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AF_DatabaseExpensesData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AF_DatabaseExpensesData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAccountsPayableList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccountsPayableList.Designer.cs">
+      <DependentUpon>FormAccountsPayableList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAccountsReceivableList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccountsReceivableList.Designer.cs">
+      <DependentUpon>FormAccountsReceivableList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AF_AccountsPayable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AF_AccountsPayable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AF_AccountsReceivable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AF_AccountsReceivable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBconnect.cs" />
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAccountsPayableList.resx">
+      <DependentUpon>FormAccountsPayableList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccountsReceivableList.resx">
+      <DependentUpon>FormAccountsReceivableList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AF_AccountsPayable.xsc">
+      <DependentUpon>AF_AccountsPayable.xsd</DependentUpon>
+    </None>
+    <None Include="AF_AccountsPayable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AF_AccountsPayable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AF_AccountsPayable.xss">
+      <DependentUpon>AF_AccountsPayable.xsd</DependentUpon>
+    </None>
+    <None Include="AF_AccountsReceivable.xsc">
+      <DependentUpon>AF_AccountsReceivable.xsd</DependentUpon>
+    </None>
+    <None Include="AF_AccountsReceivable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AF_AccountsReceivable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AF_AccountsReceivable.xss">
+      <DependentUpon>AF_AccountsReceivable.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseDataExpenses.xsc">
+      <DependentUpon>AF_DatabaseDataExpenses.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseDataExpenses.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AF_DatabaseDataExpenses.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AF_DatabaseDataExpenses.xss">
+      <DependentUpon>AF_DatabaseDataExpenses.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseDataSet.xsc">
+      <DependentUpon>AF_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AF_DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AF_DatabaseDataSet.xss">
+      <DependentUpon>AF_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseDataSet1.xsc">
+      <DependentUpon>AF_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AF_DatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AF_DatabaseDataSet1.xss">
+      <DependentUpon>AF_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseDataSet2.xsc">
+      <DependentUpon>AF_DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AF_DatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AF_DatabaseDataSet2.xss">
+      <DependentUpon>AF_DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseExpenses.xsc">
+      <DependentUpon>AF_DatabaseExpenses.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseExpenses.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AF_DatabaseExpenses.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AF_DatabaseExpenses.xss">
+      <DependentUpon>AF_DatabaseExpenses.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseExpensesData.xsc">
+      <DependentUpon>AF_DatabaseExpensesData.xsd</DependentUpon>
+    </None>
+    <None Include="AF_DatabaseExpensesData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AF_DatabaseExpensesData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AF_DatabaseExpensesData.xss">
+      <DependentUpon>AF_DatabaseExpensesData.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
